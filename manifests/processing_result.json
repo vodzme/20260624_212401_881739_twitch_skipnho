@@ -1,0 +1,5440 @@
+{
+    "folder": "20260624_212401_881739_twitch_skipnho",
+    "generated_at": "2026-06-25T03:25:04+00:00",
+    "contract": {
+        "inputs": {
+            "folder": "20260624_212401_881739_twitch_skipnho",
+            "snapshot": {
+                "folder": "20260624_212401_881739_twitch_skipnho",
+                "live_ended_at": "2026-06-25T00:14:26-03:00",
+                "video_output_id": 97,
+                "video_ready_for_processing_at": "2026-06-25T00:17:31-03:00",
+                "chat_output_id": 98,
+                "chat_ready_for_processing_at": "2026-06-25T00:17:31-03:00"
+            },
+            "video_output": {
+                "id": 97,
+                "output_type": "video_source",
+                "status": "ready_for_processing",
+                "format": "ts",
+                "totals": {
+                    "size_bytes": 8173326508,
+                    "duration_seconds": 10216.648334
+                },
+                "summary": {
+                    "descriptors_count": 1,
+                    "valid_segments_count": 1,
+                    "invalid_segments_count": 0,
+                    "partial": false
+                },
+                "segments_count": 1
+            },
+            "chat_output": {
+                "id": 98,
+                "output_type": "chat_source",
+                "status": "ready_for_processing",
+                "format": "jsonl",
+                "totals": {
+                    "size_bytes": 6495103,
+                    "lines_total": 10039,
+                    "valid_lines_total": 10039
+                },
+                "summary": {
+                    "descriptors_count": 1,
+                    "valid_segments_count": 1,
+                    "invalid_segments_count": 0,
+                    "partial": false
+                },
+                "segments_count": 1
+            },
+            "resolved_profiles": [
+                "1080p"
+            ],
+            "source_video_probe": {
+                "width": 1920,
+                "height": 1080,
+                "fps": 60,
+                "duration_seconds": 10216.648334,
+                "size_bytes": 8173326508,
+                "video_codec": "h264",
+                "audio_codec": "aac",
+                "bitrate_kbps": 6400,
+                "format_name": "mpegts"
+            },
+            "missing_video_segments_count": 0,
+            "missing_chat_segments_count": 0
+        },
+        "outputs_required": {
+            "video_inventory": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/manifests/video_inventory.json",
+            "master_playlist": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/source/master.m3u8",
+            "primary_variant_playlist": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/source/1080/index.m3u8",
+            "primary_video": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/media/1080.mp4",
+            "processing_result": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/manifests/processing_result.json",
+            "chat_merged": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/chat/merged.jsonl",
+            "assets": {
+                "poster": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/assets/poster.jpg",
+                "animated": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/assets/animated.webp",
+                "thumbnails_vtt": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/assets/thumbnails.vtt"
+            }
+        },
+        "upload_contract": {
+            "source": "processing_result_manifest",
+            "channel_live_id": 139,
+            "channel_live_pipeline_run_id": 120,
+            "status": "ready",
+            "processing_result_path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/manifests/processing_result.json"
+        }
+    },
+    "base_quality": "1080p",
+    "source_profiles_generated": [
+        "1080p"
+    ],
+    "source_generation": {
+        "mode": "copy_from_recordings",
+        "validated": true
+    },
+    "mp4_profiles_generated": [
+        "1080p"
+    ],
+    "mp4_generation": {
+        "mode": "copy_from_processing_source"
+    },
+    "chat_generated": true,
+    "assets_generated": true,
+    "primary_video": {
+        "slug": "1080",
+        "path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/media/1080.mp4",
+        "probe": {
+            "width": 1920,
+            "height": 1080,
+            "fps": 60,
+            "duration_seconds": 10216.67,
+            "size_bytes": 7898226912,
+            "video_codec": "h264",
+            "audio_codec": "aac",
+            "bitrate_kbps": 6185,
+            "format_name": "mov,mp4,m4a,3gp,3g2,mj2"
+        },
+        "mode": "copy"
+    },
+    "cleanup": {
+        "primary_source_ready_at": "2026-06-25T03:20:39+00:00",
+        "chat_merged_ready_at": "2026-06-25T03:20:39+00:00",
+        "recordings_cleaned": true,
+        "recordings_cleaned_at": "2026-06-25T03:20:39+00:00",
+        "deleted_files_count": 5,
+        "deleted_directory": "/var/www/html/storage/app/private/recordings/20260624_212401_881739_twitch_skipnho",
+        "validation": {
+            "status": "passed",
+            "validated_at": "2026-06-25T03:20:40+00:00",
+            "master_playlist_path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/source/master.m3u8",
+            "variant_playlist_path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/source/1080/index.m3u8",
+            "video_inventory_path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/manifests/video_inventory.json",
+            "input_segments_count": 1,
+            "output_segments_count": 1022,
+            "input_bytes": 8173326508,
+            "output_bytes": 8140276672,
+            "bytes_ratio": 0.995956,
+            "input_duration_seconds": 10216.648334,
+            "output_duration_seconds": 10215.666667,
+            "duration_delta_seconds": 0.981667,
+            "playlist_duration_seconds": 10215.666667,
+            "playlist_entries": 1022,
+            "probe_samples": [
+                {
+                    "file": "seg_00001.ts",
+                    "width": 1920,
+                    "height": 1080,
+                    "video_codec": "h264",
+                    "audio_codec": "aac",
+                    "duration_seconds": 9.999667,
+                    "size_bytes": 7969884
+                },
+                {
+                    "file": "seg_00511.ts",
+                    "width": 1920,
+                    "height": 1080,
+                    "video_codec": "h264",
+                    "audio_codec": "aac",
+                    "duration_seconds": 10.032334,
+                    "size_bytes": 7962740
+                },
+                {
+                    "file": "seg_01022.ts",
+                    "width": 1920,
+                    "height": 1080,
+                    "video_codec": "h264",
+                    "audio_codec": "aac",
+                    "duration_seconds": 6.686333,
+                    "size_bytes": 4531552
+                }
+            ],
+            "chat": {
+                "validated": true,
+                "required": true,
+                "merged_path": "/var/www/html/storage/app/private/processing/20260624_212401_881739_twitch_skipnho/chat/merged.jsonl",
+                "merged_size_bytes": 3867589,
+                "input_lines_total": 10039,
+                "output_lines_total": 9976,
+                "dropped_lines_total": 63,
+                "drop_reasons": {
+                    "duplicates": 5,
+                    "unsupported_event": 39,
+                    "system_event": 17,
+                    "encode_failed": 2
+                }
+            },
+            "constraints": {
+                "min_output_bytes_ratio": 0.85,
+                "max_output_bytes_ratio": 1.15,
+                "max_duration_delta_seconds": 10
+            }
+        },
+        "synchronized_outputs": 2
+    },
+    "artifacts": {
+        "count": 1045,
+        "by_prefix": {
+            "assets": 15,
+            "chat": 1,
+            "manifests": 4,
+            "media": 1,
+            "source": 1024
+        },
+        "items": [
+            {
+                "relative_path": "assets/animated.webp",
+                "size_bytes": 1161256,
+                "checksum_sha256": "20aabd4e30aae6e02637bf03198f1f9f443e25834e68ec5691746b1c531413fe"
+            },
+            {
+                "relative_path": "assets/poster.jpg",
+                "size_bytes": 151706,
+                "checksum_sha256": "907dbfaffb6403ec52e5be79d462ff344f605334f6245cb4a5080fd8c1f4b379"
+            },
+            {
+                "relative_path": "assets/strips/strip_00001.jpg",
+                "size_bytes": 283914,
+                "checksum_sha256": "b7b2442585db6abce35d06ad04246788d4148f80206537753a27747ae0310727"
+            },
+            {
+                "relative_path": "assets/strips/strip_00002.jpg",
+                "size_bytes": 225592,
+                "checksum_sha256": "0462b3b4ee7d54ee6979aec341b3442cd89f75092d5d0d8908d346f1348b678c"
+            },
+            {
+                "relative_path": "assets/strips/strip_00003.jpg",
+                "size_bytes": 255266,
+                "checksum_sha256": "71aa9b2c92f27e2aaa9d0ac9198242171c82b1c061d1b834e44eff30c7d81f77"
+            },
+            {
+                "relative_path": "assets/strips/strip_00004.jpg",
+                "size_bytes": 185903,
+                "checksum_sha256": "bc0aa58b1e06596025e697785eb6c9af3cd0dda1de5ef225ac5c56cae116f0a9"
+            },
+            {
+                "relative_path": "assets/strips/strip_00005.jpg",
+                "size_bytes": 216294,
+                "checksum_sha256": "04bb42b09ea556e78c424e571f0045433bbb8337e78129cd67604197bf190a0e"
+            },
+            {
+                "relative_path": "assets/strips/strip_00006.jpg",
+                "size_bytes": 248405,
+                "checksum_sha256": "2a6899d64ef8d5d65618c0ebaf05c9c84452b01723a358fe7d2c9a908c0d2995"
+            },
+            {
+                "relative_path": "assets/strips/strip_00007.jpg",
+                "size_bytes": 225924,
+                "checksum_sha256": "ae8d20530c8119f3dd55ff6cee83a981ee84cb2d5c34789cb7713fb3b0055338"
+            },
+            {
+                "relative_path": "assets/strips/strip_00008.jpg",
+                "size_bytes": 229106,
+                "checksum_sha256": "4f34ec33347b9531a5aa9d540f9c2097bd1c81ef520470912e80c14a55044ebe"
+            },
+            {
+                "relative_path": "assets/strips/strip_00009.jpg",
+                "size_bytes": 227698,
+                "checksum_sha256": "b1c087366e0acf014fb7ae1546b70a336f0201984c387926e6c39edb5d93cbf3"
+            },
+            {
+                "relative_path": "assets/strips/strip_00010.jpg",
+                "size_bytes": 257959,
+                "checksum_sha256": "9c78d919b74175efa41d7673b58fed9906662fe729dcfa447895c2d12a4c5da3"
+            },
+            {
+                "relative_path": "assets/strips/strip_00011.jpg",
+                "size_bytes": 247104,
+                "checksum_sha256": "d730503a4cc5e03126f15c8b60f2a394bf365435b2aaf794b5d1788c346c857a"
+            },
+            {
+                "relative_path": "assets/strips/strip_00012.jpg",
+                "size_bytes": 274962,
+                "checksum_sha256": "eee80f823f15483ab7c9001bfbc146b19498909d1c4dd1466e4452901159dd83"
+            },
+            {
+                "relative_path": "assets/thumbnails.vtt",
+                "size_bytes": 90400,
+                "checksum_sha256": "5127c96309fcac5502dc77694aae17aa97a5eeb31b5e7bf6cbcbbb29226ef306"
+            },
+            {
+                "relative_path": "chat/merged.jsonl",
+                "size_bytes": 3867589,
+                "checksum_sha256": "86675ae7b0b5a2133f6609b39ab35aca82678b6522c5a05ac0bf720fa1f445db"
+            },
+            {
+                "relative_path": "manifests/mp4_meta.json",
+                "size_bytes": 713,
+                "checksum_sha256": "27bcac8d10b839c0dbcbcd1d466500ad06a957570c1316c0a5cb1165a07741c1"
+            },
+            {
+                "relative_path": "manifests/processing_context.json",
+                "size_bytes": 3316,
+                "checksum_sha256": "43f538d5ad3e25c569a1843ec4ed6e10e62cfd0c41c2b0b76b9ced9fac974e01"
+            },
+            {
+                "relative_path": "manifests/processing_result.json",
+                "size_bytes": 8658,
+                "checksum_sha256": "4d7b76a9d9d778ae0e3e0fae3a437582365065b45ef5d14d2a8434df48b8f667"
+            },
+            {
+                "relative_path": "manifests/video_inventory.json",
+                "size_bytes": 2160,
+                "checksum_sha256": "916db95e3760d247ec4e4e76253808163798196f1bae73725d41aa5f1717d87c"
+            },
+            {
+                "relative_path": "media/1080.mp4",
+                "size_bytes": 7898226912,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/index.m3u8",
+                "size_bytes": 32845,
+                "checksum_sha256": "583e508fe605f761de3179bcc52f76e6151c0782e60c24565af3e78001b95b5b"
+            },
+            {
+                "relative_path": "source/1080/seg_00001.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00002.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00003.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00004.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00005.ts",
+                "size_bytes": 8037188,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00006.ts",
+                "size_bytes": 7908408,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00007.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00008.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00009.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00010.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00011.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00012.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00013.ts",
+                "size_bytes": 7962928,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00014.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00015.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00016.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00017.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00018.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00019.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00020.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00021.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00022.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00023.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00024.ts",
+                "size_bytes": 7973456,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00025.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00026.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00027.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00028.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00029.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00030.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00031.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00032.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00033.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00034.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00035.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00036.ts",
+                "size_bytes": 7991316,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00037.ts",
+                "size_bytes": 7947700,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00038.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00039.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00040.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00041.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00042.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00043.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00044.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00045.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00046.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00047.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00048.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00049.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00050.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00051.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00052.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00053.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00054.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00055.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00056.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00057.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00058.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00059.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00060.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00061.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00062.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00063.ts",
+                "size_bytes": 7974772,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00064.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00065.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00066.ts",
+                "size_bytes": 7962928,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00067.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00068.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00069.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00070.ts",
+                "size_bytes": 7981540,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00071.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00072.ts",
+                "size_bytes": 7947888,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00073.ts",
+                "size_bytes": 7976088,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00074.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00075.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00076.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00077.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00078.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00079.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00080.ts",
+                "size_bytes": 7985112,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00081.ts",
+                "size_bytes": 7951460,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00082.ts",
+                "size_bytes": 7962364,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00083.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00084.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00085.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00086.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00087.ts",
+                "size_bytes": 7975900,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00088.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00089.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00090.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00091.ts",
+                "size_bytes": 7959732,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00092.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00093.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00094.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00095.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00096.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00097.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00098.ts",
+                "size_bytes": 7976464,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00099.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00100.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00101.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00102.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00103.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00104.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00105.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00106.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00107.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00108.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00109.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00110.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00111.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00112.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00113.ts",
+                "size_bytes": 7977028,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00114.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00115.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00116.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00117.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00118.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00119.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00120.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00121.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00122.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00123.ts",
+                "size_bytes": 7959732,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00124.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00125.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00126.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00127.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00128.ts",
+                "size_bytes": 7963116,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00129.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00130.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00131.ts",
+                "size_bytes": 7975524,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00132.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00133.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00134.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00135.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00136.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00137.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00138.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00139.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00140.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00141.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00142.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00143.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00144.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00145.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00146.ts",
+                "size_bytes": 7981916,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00147.ts",
+                "size_bytes": 7955972,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00148.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00149.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00150.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00151.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00152.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00153.ts",
+                "size_bytes": 7978908,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00154.ts",
+                "size_bytes": 7957664,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00155.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00156.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00157.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00158.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00159.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00160.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00161.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00162.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00163.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00164.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00165.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00166.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00167.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00168.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00169.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00170.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00171.ts",
+                "size_bytes": 7959920,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00172.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00173.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00174.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00175.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00176.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00177.ts",
+                "size_bytes": 7958416,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00178.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00179.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00180.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00181.ts",
+                "size_bytes": 8014252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00182.ts",
+                "size_bytes": 7923636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00183.ts",
+                "size_bytes": 7961048,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00184.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00185.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00186.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00187.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00188.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00189.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00190.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00191.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00192.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00193.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00194.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00195.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00196.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00197.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00198.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00199.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00200.ts",
+                "size_bytes": 7962928,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00201.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00202.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00203.ts",
+                "size_bytes": 8015380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00204.ts",
+                "size_bytes": 7927396,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00205.ts",
+                "size_bytes": 7975524,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00206.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00207.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00208.ts",
+                "size_bytes": 7974396,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00209.ts",
+                "size_bytes": 7973644,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00210.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00211.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00212.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00213.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00214.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00215.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00216.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00217.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00218.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00219.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00220.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00221.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00222.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00223.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00224.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00225.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00226.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00227.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00228.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00229.ts",
+                "size_bytes": 7956912,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00230.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00231.ts",
+                "size_bytes": 7974960,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00232.ts",
+                "size_bytes": 7955972,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00233.ts",
+                "size_bytes": 7964620,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00234.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00235.ts",
+                "size_bytes": 7962176,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00236.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00237.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00238.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00239.ts",
+                "size_bytes": 7980036,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00240.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00241.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00242.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00243.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00244.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00245.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00246.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00247.ts",
+                "size_bytes": 7975712,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00248.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00249.ts",
+                "size_bytes": 7963116,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00250.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00251.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00252.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00253.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00254.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00255.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00256.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00257.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00258.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00259.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00260.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00261.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00262.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00263.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00264.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00265.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00266.ts",
+                "size_bytes": 7958792,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00267.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00268.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00269.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00270.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00271.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00272.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00273.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00274.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00275.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00276.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00277.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00278.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00279.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00280.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00281.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00282.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00283.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00284.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00285.ts",
+                "size_bytes": 7973832,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00286.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00287.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00288.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00289.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00290.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00291.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00292.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00293.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00294.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00295.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00296.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00297.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00298.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00299.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00300.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00301.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00302.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00303.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00304.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00305.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00306.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00307.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00308.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00309.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00310.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00311.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00312.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00313.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00314.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00315.ts",
+                "size_bytes": 7962364,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00316.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00317.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00318.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00319.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00320.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00321.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00322.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00323.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00324.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00325.ts",
+                "size_bytes": 7961800,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00326.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00327.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00328.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00329.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00330.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00331.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00332.ts",
+                "size_bytes": 7989060,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00333.ts",
+                "size_bytes": 7949392,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00334.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00335.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00336.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00337.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00338.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00339.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00340.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00341.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00342.ts",
+                "size_bytes": 7960672,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00343.ts",
+                "size_bytes": 7962552,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00344.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00345.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00346.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00347.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00348.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00349.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00350.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00351.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00352.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00353.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00354.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00355.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00356.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00357.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00358.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00359.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00360.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00361.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00362.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00363.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00364.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00365.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00366.ts",
+                "size_bytes": 7977028,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00367.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00368.ts",
+                "size_bytes": 7974584,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00369.ts",
+                "size_bytes": 7973456,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00370.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00371.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00372.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00373.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00374.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00375.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00376.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00377.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00378.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00379.ts",
+                "size_bytes": 7974208,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00380.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00381.ts",
+                "size_bytes": 7973832,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00382.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00383.ts",
+                "size_bytes": 7977968,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00384.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00385.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00386.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00387.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00388.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00389.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00390.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00391.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00392.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00393.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00394.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00395.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00396.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00397.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00398.ts",
+                "size_bytes": 7982104,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00399.ts",
+                "size_bytes": 7953904,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00400.ts",
+                "size_bytes": 7974772,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00401.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00402.ts",
+                "size_bytes": 7977592,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00403.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00404.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00405.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00406.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00407.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00408.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00409.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00410.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00411.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00412.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00413.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00414.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00415.ts",
+                "size_bytes": 7995640,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00416.ts",
+                "size_bytes": 7946384,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00417.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00418.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00419.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00420.ts",
+                "size_bytes": 7980036,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00421.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00422.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00423.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00424.ts",
+                "size_bytes": 7976464,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00425.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00426.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00427.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00428.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00429.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00430.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00431.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00432.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00433.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00434.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00435.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00436.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00437.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00438.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00439.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00440.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00441.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00442.ts",
+                "size_bytes": 7981352,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00443.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00444.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00445.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00446.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00447.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00448.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00449.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00450.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00451.ts",
+                "size_bytes": 7995452,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00452.ts",
+                "size_bytes": 7940932,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00453.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00454.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00455.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00456.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00457.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00458.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00459.ts",
+                "size_bytes": 7975900,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00460.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00461.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00462.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00463.ts",
+                "size_bytes": 7955032,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00464.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00465.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00466.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00467.ts",
+                "size_bytes": 7990000,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00468.ts",
+                "size_bytes": 7952776,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00469.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00470.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00471.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00472.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00473.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00474.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00475.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00476.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00477.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00478.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00479.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00480.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00481.ts",
+                "size_bytes": 7974396,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00482.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00483.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00484.ts",
+                "size_bytes": 7973832,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00485.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00486.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00487.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00488.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00489.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00490.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00491.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00492.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00493.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00494.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00495.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00496.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00497.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00498.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00499.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00500.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00501.ts",
+                "size_bytes": 7973644,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00502.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00503.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00504.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00505.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00506.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00507.ts",
+                "size_bytes": 7975524,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00508.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00509.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00510.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00511.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00512.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00513.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00514.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00515.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00516.ts",
+                "size_bytes": 7982292,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00517.ts",
+                "size_bytes": 7958228,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00518.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00519.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00520.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00521.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00522.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00523.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00524.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00525.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00526.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00527.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00528.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00529.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00530.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00531.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00532.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00533.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00534.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00535.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00536.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00537.ts",
+                "size_bytes": 7961424,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00538.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00539.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00540.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00541.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00542.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00543.ts",
+                "size_bytes": 7962176,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00544.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00545.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00546.ts",
+                "size_bytes": 7960860,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00547.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00548.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00549.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00550.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00551.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00552.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00553.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00554.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00555.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00556.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00557.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00558.ts",
+                "size_bytes": 8019328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00559.ts",
+                "size_bytes": 7917620,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00560.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00561.ts",
+                "size_bytes": 7993760,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00562.ts",
+                "size_bytes": 7936796,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00563.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00564.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00565.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00566.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00567.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00568.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00569.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00570.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00571.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00572.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00573.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00574.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00575.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00576.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00577.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00578.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00579.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00580.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00581.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00582.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00583.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00584.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00585.ts",
+                "size_bytes": 7974584,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00586.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00587.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00588.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00589.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00590.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00591.ts",
+                "size_bytes": 7974396,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00592.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00593.ts",
+                "size_bytes": 7984548,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00594.ts",
+                "size_bytes": 7956348,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00595.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00596.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00597.ts",
+                "size_bytes": 7962176,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00598.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00599.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00600.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00601.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00602.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00603.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00604.ts",
+                "size_bytes": 7977028,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00605.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00606.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00607.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00608.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00609.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00610.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00611.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00612.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00613.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00614.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00615.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00616.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00617.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00618.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00619.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00620.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00621.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00622.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00623.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00624.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00625.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00626.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00627.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00628.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00629.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00630.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00631.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00632.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00633.ts",
+                "size_bytes": 7976276,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00634.ts",
+                "size_bytes": 7975148,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00635.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00636.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00637.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00638.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00639.ts",
+                "size_bytes": 7978156,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00640.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00641.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00642.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00643.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00644.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00645.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00646.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00647.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00648.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00649.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00650.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00651.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00652.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00653.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00654.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00655.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00656.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00657.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00658.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00659.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00660.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00661.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00662.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00663.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00664.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00665.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00666.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00667.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00668.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00669.ts",
+                "size_bytes": 7975524,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00670.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00671.ts",
+                "size_bytes": 7973644,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00672.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00673.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00674.ts",
+                "size_bytes": 7986240,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00675.ts",
+                "size_bytes": 7958980,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00676.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00677.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00678.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00679.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00680.ts",
+                "size_bytes": 7973456,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00681.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00682.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00683.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00684.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00685.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00686.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00687.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00688.ts",
+                "size_bytes": 7960860,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00689.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00690.ts",
+                "size_bytes": 7964244,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00691.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00692.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00693.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00694.ts",
+                "size_bytes": 7974772,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00695.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00696.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00697.ts",
+                "size_bytes": 7963116,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00698.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00699.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00700.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00701.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00702.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00703.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00704.ts",
+                "size_bytes": 7962928,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00705.ts",
+                "size_bytes": 7962552,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00706.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00707.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00708.ts",
+                "size_bytes": 7979848,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00709.ts",
+                "size_bytes": 7949956,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00710.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00711.ts",
+                "size_bytes": 7988684,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00712.ts",
+                "size_bytes": 7954092,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00713.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00714.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00715.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00716.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00717.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00718.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00719.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00720.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00721.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00722.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00723.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00724.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00725.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00726.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00727.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00728.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00729.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00730.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00731.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00732.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00733.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00734.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00735.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00736.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00737.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00738.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00739.ts",
+                "size_bytes": 7973832,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00740.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00741.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00742.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00743.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00744.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00745.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00746.ts",
+                "size_bytes": 7961612,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00747.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00748.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00749.ts",
+                "size_bytes": 7976840,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00750.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00751.ts",
+                "size_bytes": 7961612,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00752.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00753.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00754.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00755.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00756.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00757.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00758.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00759.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00760.ts",
+                "size_bytes": 7978156,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00761.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00762.ts",
+                "size_bytes": 7962740,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00763.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00764.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00765.ts",
+                "size_bytes": 7964620,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00766.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00767.ts",
+                "size_bytes": 7974208,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00768.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00769.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00770.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00771.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00772.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00773.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00774.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00775.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00776.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00777.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00778.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00779.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00780.ts",
+                "size_bytes": 7964996,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00781.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00782.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00783.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00784.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00785.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00786.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00787.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00788.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00789.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00790.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00791.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00792.ts",
+                "size_bytes": 7974772,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00793.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00794.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00795.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00796.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00797.ts",
+                "size_bytes": 7972704,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00798.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00799.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00800.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00801.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00802.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00803.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00804.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00805.ts",
+                "size_bytes": 7976088,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00806.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00807.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00808.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00809.ts",
+                "size_bytes": 7964620,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00810.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00811.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00812.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00813.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00814.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00815.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00816.ts",
+                "size_bytes": 7973456,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00817.ts",
+                "size_bytes": 7964056,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00818.ts",
+                "size_bytes": 8018952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00819.ts",
+                "size_bytes": 7919124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00820.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00821.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00822.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00823.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00824.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00825.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00826.ts",
+                "size_bytes": 7961048,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00827.ts",
+                "size_bytes": 7962928,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00828.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00829.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00830.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00831.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00832.ts",
+                "size_bytes": 7963492,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00833.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00834.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00835.ts",
+                "size_bytes": 7976276,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00836.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00837.ts",
+                "size_bytes": 7974020,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00838.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00839.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00840.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00841.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00842.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00843.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00844.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00845.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00846.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00847.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00848.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00849.ts",
+                "size_bytes": 7973456,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00850.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00851.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00852.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00853.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00854.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00855.ts",
+                "size_bytes": 8021960,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00856.ts",
+                "size_bytes": 7921756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00857.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00858.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00859.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00860.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00861.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00862.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00863.ts",
+                "size_bytes": 7977216,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00864.ts",
+                "size_bytes": 7972516,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00865.ts",
+                "size_bytes": 7961424,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00866.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00867.ts",
+                "size_bytes": 7968004,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00868.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00869.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00870.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00871.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00872.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00873.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00874.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00875.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00876.ts",
+                "size_bytes": 7972140,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00877.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00878.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00879.ts",
+                "size_bytes": 7971012,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00880.ts",
+                "size_bytes": 7974208,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00881.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00882.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00883.ts",
+                "size_bytes": 7978156,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00884.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00885.ts",
+                "size_bytes": 8028352,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00886.ts",
+                "size_bytes": 7892616,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00887.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00888.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00889.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00890.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00891.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00892.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00893.ts",
+                "size_bytes": 7973644,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00894.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00895.ts",
+                "size_bytes": 7968944,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00896.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00897.ts",
+                "size_bytes": 8005604,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00898.ts",
+                "size_bytes": 7931344,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00899.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00900.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00901.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00902.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00903.ts",
+                "size_bytes": 7978720,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00904.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00905.ts",
+                "size_bytes": 7974020,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00906.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00907.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00908.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00909.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00910.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00911.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00912.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00913.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00914.ts",
+                "size_bytes": 7964808,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00915.ts",
+                "size_bytes": 7978156,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00916.ts",
+                "size_bytes": 7983796,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00917.ts",
+                "size_bytes": 7957476,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00918.ts",
+                "size_bytes": 7967440,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00919.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00920.ts",
+                "size_bytes": 7978532,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00921.ts",
+                "size_bytes": 7957852,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00922.ts",
+                "size_bytes": 7975336,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00923.ts",
+                "size_bytes": 7959168,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00924.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00925.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00926.ts",
+                "size_bytes": 7973080,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00927.ts",
+                "size_bytes": 7962552,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00928.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00929.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00930.ts",
+                "size_bytes": 7970824,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00931.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00932.ts",
+                "size_bytes": 7978156,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00933.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00934.ts",
+                "size_bytes": 7975900,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00935.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00936.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00937.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00938.ts",
+                "size_bytes": 7970260,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00939.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00940.ts",
+                "size_bytes": 7981352,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00941.ts",
+                "size_bytes": 7960296,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00942.ts",
+                "size_bytes": 7969320,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00943.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00944.ts",
+                "size_bytes": 7976652,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00945.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00946.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00947.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00948.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00949.ts",
+                "size_bytes": 7970448,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00950.ts",
+                "size_bytes": 7960860,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00951.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00952.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00953.ts",
+                "size_bytes": 7966688,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00954.ts",
+                "size_bytes": 7974208,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00955.ts",
+                "size_bytes": 7966500,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00956.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00957.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00958.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00959.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00960.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00961.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00962.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00963.ts",
+                "size_bytes": 7972328,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00964.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00965.ts",
+                "size_bytes": 7971388,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00966.ts",
+                "size_bytes": 7973268,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00967.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00968.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00969.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00970.ts",
+                "size_bytes": 7963680,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00971.ts",
+                "size_bytes": 7965560,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00972.ts",
+                "size_bytes": 7958792,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00973.ts",
+                "size_bytes": 7965184,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00974.ts",
+                "size_bytes": 7969132,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00975.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00976.ts",
+                "size_bytes": 7969884,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00977.ts",
+                "size_bytes": 7971576,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00978.ts",
+                "size_bytes": 7966124,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00979.ts",
+                "size_bytes": 7986240,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00980.ts",
+                "size_bytes": 7950520,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00981.ts",
+                "size_bytes": 7971952,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00982.ts",
+                "size_bytes": 7977592,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00983.ts",
+                "size_bytes": 7968756,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00984.ts",
+                "size_bytes": 7963868,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00985.ts",
+                "size_bytes": 7963304,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00986.ts",
+                "size_bytes": 7971764,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00987.ts",
+                "size_bytes": 7971200,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00988.ts",
+                "size_bytes": 7967252,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00989.ts",
+                "size_bytes": 7970636,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00990.ts",
+                "size_bytes": 7965748,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00991.ts",
+                "size_bytes": 7974772,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00992.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00993.ts",
+                "size_bytes": 7969508,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00994.ts",
+                "size_bytes": 7973832,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00995.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00996.ts",
+                "size_bytes": 7960484,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00997.ts",
+                "size_bytes": 7965936,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00998.ts",
+                "size_bytes": 7970072,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_00999.ts",
+                "size_bytes": 7969696,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01000.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01001.ts",
+                "size_bytes": 7975524,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01002.ts",
+                "size_bytes": 7967064,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01003.ts",
+                "size_bytes": 7966312,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01004.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01005.ts",
+                "size_bytes": 8025532,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01006.ts",
+                "size_bytes": 7905400,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01007.ts",
+                "size_bytes": 7968380,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01008.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01009.ts",
+                "size_bytes": 7972892,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01010.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01011.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01012.ts",
+                "size_bytes": 7964432,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01013.ts",
+                "size_bytes": 7965372,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01014.ts",
+                "size_bytes": 7968568,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01015.ts",
+                "size_bytes": 7967816,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01016.ts",
+                "size_bytes": 7966876,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01017.ts",
+                "size_bytes": 7964620,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01018.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01019.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01020.ts",
+                "size_bytes": 7967628,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01021.ts",
+                "size_bytes": 7968192,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/1080/seg_01022.ts",
+                "size_bytes": 4531552,
+                "checksum_sha256": null
+            },
+            {
+                "relative_path": "source/master.m3u8",
+                "size_bytes": 98,
+                "checksum_sha256": "b3705b5dc3bfee1bc1e89e632ecd1ce418e1ab06c3125b7d3937c68ed4420a3b"
+            }
+        ]
+    },
+    "validations": {
+        "video_inventory_exists": true,
+        "master_playlist_exists": true,
+        "primary_variant_playlist_exists": true,
+        "chat_merged_exists": true,
+        "primary_video_exists": true,
+        "assets_exist": true
+    }
+}
